@@ -1,0 +1,17 @@
+order_id,product,category,price,quantity,customer_age,city
+201,Phone,Electronics,700.0,1,28.0,Lyon
+202,Headphones,Accessories,80.0,2,35.0,Paris
+203,Tablet,Electronics,450.0,1,42.0,Marseille
+204,Phone,electronics,750.0,2,31.0,lyon
+205,Charger,Accessories,25.0,5,26.0,Paris
+206,Tablet,Electronics,500.0,1,39.0,Lyon
+207,Headphones,Accessories,90.0,3,22.0,Marseille
+208,Phone,Electronics,680.0,1,,Paris
+209,Charger,Accessories,30.0,4,45.0,Lyon
+210,Tablet,Electronics,470.0,2,33.0,Marseille
+211,Phone,Electronics,720.0,1,29.0,Paris
+212,Headphones,Accessories,,2,51.0,Lyon
+212,Headphones,Accessories,,2,51.0,Lyon
+213,Charger,,20.0,6,24.0,Paris
+214,Tablet,Electronics,3000.0,-1,37.0,Marseille
+215,Phone,Electronics,710.0,1,30.0,Lyon
