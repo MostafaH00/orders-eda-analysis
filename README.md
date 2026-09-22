@@ -10,6 +10,16 @@ The objective is to clean the data, explore its main characteristics, visualize 
 
 The dataset contains sales orders with information about products, categories, prices, quantities, customers, and cities.
 
+## Data Cleaning
+
+- Remove duplicate records
+- Standardize categorical variables
+- Handle missing values based on the context of each variable
+- Replace missing ages with the median age
+- Impute missing prices using the median price of the corresponding product
+- Remove records containing impossible values, such as negative prices or quantities
+- Identify potential outliers
+
 ## Analysis
 
 The project includes:
@@ -31,24 +41,37 @@ The project includes:
 
 ## Key Insights
 
-1. Produits — Revenue
-Les Phones génèrent le revenue total le plus élevé du dataset. Cela semble notamment lié à leur prix unitaire relativement élevé et au fait que plusieurs commandes concernent ce produit.
-2. Quantités achetées
-Les produits les moins chers, notamment les Chargers et les Headphones, ont tendance à être achetés en plus grande quantité que les produits plus chers comme les Phones. Cela suggère une relation négative entre le prix et la quantité achetée dans ce dataset.
-3. Catégories
-La catégorie Electronics génère nettement plus de revenue que la catégorie Accessories. Cela semble notamment s'expliquer par les prix plus élevés des produits Electronics, qui comprennent les Phones et Tablets, alors que les Accessories contiennent des produits moins chers comme les Chargers et Headphones.
-4. Villes
-Lyon génère le revenue total le plus élevé. Bien que le nombre de commandes soit assez proche de celui de Paris, l'écart de revenue est important. Cela suggère que le nombre de commandes seul n'explique pas le revenue : la composition des commandes, notamment le type de produit, son prix et la quantité achetée, joue également un rôle important.
-5. Relation entre le prix et la quantité achetée
-Après le nettoyage des données, on observe que les produits ayant un prix élevé ont tendance à être achetés en plus petites quantités, tandis que les produits moins chers sont généralement achetés en plus grande quantité. Cette relation est visible dans le scatter plot et suggère une association négative entre le prix et la quantité. Cependant, cette observation ne permet pas de conclure à une relation de causalité.
+1. **Products — Revenue**
+ Phones generate the highest total revenue, likely due to their high unit price and their presence in multiple orders.
+2. **Quantity**
+ Cheaper products, such as Chargers and Headphones, tend to be purchased in larger quantities than more expensive products.
+3. **Categories**
+The Electronics category generates higher total revenue than Accessories, which may be explained by its higher product prices.
+4. **Cities**
+ Lyon generates the highest total revenue despite having a similar number of orders to Paris. The revenue gap may be explained by differences in the products ordered.
+5. **Price - Quantity relation**
+ Price and quantity show a negative relationship, with higher-priced products generally purchased in smaller quantities; however, this does not imply causation.
 
-\## Future Improvements
+## Repository Structure
+
+- `data/` → Contains the dataset used for the analysis
+- `notebooks/` → Contains the Jupyter notebook with the complete EDA
+- `.gitignore` → Specifies files and folders that Git should ignore
+- `README.md` → Provides an overview of the project, methodology, and key findings
+
+## How to Run
+
+1. Clone the repository.
+2. Install the required Python libraries: Pandas, NumPy, and Matplotlib.
+3. Open `notebooks/EDA_project.ipynb` in Jupyter Notebook.
+4. Run the cells in order.
 
 
+## Future Improvements
 
-\- Perform deeper statistical analysis
+- Perform deeper statistical analysis
 
-\- Explore additional relationships between variables
+- Explore additional relationships between variables
 
-\- Apply the analysis to a larger real-world dataset
+- Apply the analysis to a larger real-world dataset
 
